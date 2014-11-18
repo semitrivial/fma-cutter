@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:fma="http://purl.org/obo/owlapi/fma#">
+
+    <owl:Ontology rdf:about="http://purl.org/obo/owlapi/fma"/>
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+    <!-- http://purl.org/obo/owlapi/fma#attaches_to -->
+    <ObjectProperty rdf:about="http://purl.org/obo/owlapi/fma#attaches_to">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attaches_to</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+    <!-- http://purl.org/obo/owlapi/fma#bounds -->
+    <ObjectProperty rdf:about="http://purl.org/obo/owlapi/fma#bounds">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bounds</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+    <!-- http://purl.org/obo/owlapi/fma#branch_of -->
+    <ObjectProperty rdf:about="http://purl.org/obo/owlapi/fma#branch_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branch_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+    <!-- http://purl.org/obo/owlapi/fma#constitutional_part_of -->
+    <ObjectProperty rdf:about="http://purl.org/obo/owlapi/fma#constitutional_part_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constitutional_part_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#part_of"/>
+    </ObjectProperty>
+    
+    <!-- http://purl.org/obo/owlapi/fma#regional_part_of -->
+    <ObjectProperty rdf:about="http://purl.org/obo/owlapi/fma#regional_part_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regional_part_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#part_of"/>
+    </ObjectProperty>
+    
+    <!-- http://purl.org/obo/owlapi/fma#systemic_part_of -->
+    <ObjectProperty rdf:about="http://purl.org/obo/owlapi/fma#systemic_part_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systemic_part_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#part_of"/>
+    </ObjectProperty>
+    
+    <!-- http://www.geneontology.org/formats/oboInOwl#part_of -->
+    <ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">part_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+    <ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
